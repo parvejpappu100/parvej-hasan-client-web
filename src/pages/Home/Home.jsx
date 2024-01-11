@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <AnimatedCursor
                 innerSize={10}
-                outerSize={10}
+                outerSize={20}
                 color='201,243,29'
                 outerAlpha={0.2}
                 innerScale={0.7}
