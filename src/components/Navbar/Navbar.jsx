@@ -3,6 +3,8 @@ import { FaAlignRight } from "react-icons/fa";
 import { Element, Link } from 'react-scroll';
 import Banner from '../Banner/Banner';
 import About from '../About/About';
+import Services from '../Services/Services';
+import Skills from '../Skills/Skills';
 
 
 const Navbar = () => {
@@ -13,7 +15,7 @@ const Navbar = () => {
     const navOptions = <>
         <li>
             <Link style={activeLink === 'home' ? { color: '#C9F31D', textDecoration: "underline", backgroundColor: "#131313" } : {}}
-                className="hover:text-white bg-[#131313] hover:bg-[#131313]"
+                className="hover:text-white bg-[#131313] hover:bg-[#131313] rounded-none"
                 to="home"
                 spy={true}
                 smooth={true}
@@ -21,14 +23,26 @@ const Navbar = () => {
                 onSetActive={() => setActiveLink('home')}>Home</Link>
         </li>
         <li><Link style={activeLink === 'about' ? { color: '#C9F31D', textDecoration: "underline", backgroundColor: "#131313" } : {}}
-            className="hover:text-white bg-[#131313] hover:bg-[#131313]"
+            className="hover:text-white bg-[#131313] hover:bg-[#131313] rounded-none"
             to="about"
             spy={true}
             smooth={true}
             duration={500}
             onSetActive={() => setActiveLink('about')}>About</Link></li>
-        <li><Link>Services</Link></li>
-        <li><Link>Skill</Link></li>
+        <li><Link style={activeLink === 'services' ? { color: '#C9F31D', textDecoration: "underline", backgroundColor: "#131313" } : {}}
+            className="hover:text-white bg-[#131313] hover:bg-[#131313] rounded-none"
+            to="services"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onSetActive={() => setActiveLink('services')}>Services</Link></li>
+        <li><Link style={activeLink === 'skill' ? { color: '#C9F31D', textDecoration: "underline", backgroundColor: "#131313" } : {}}
+            className="hover:text-white bg-[#131313] hover:bg-[#131313] rounded-none"
+            to="skill"
+            spy={true}
+            smooth={true}
+            duration={500}
+            onSetActive={() => setActiveLink('skill')}>Skill</Link></li>
         <li><Link>Portfolio</Link></li>
         <li><Link>Testimonial</Link></li>
         <li><Link>Contact</Link></li>
@@ -94,6 +108,12 @@ const Navbar = () => {
                 </Element>
                 <Element name="about" className="section">
                     <About></About>
+                </Element>
+                <Element name="services" className="section">
+                  <Services></Services>
+                </Element>
+                <Element name="skill" className="section">
+                  <Skills></Skills>
                 </Element>
             </div>
         </div>
