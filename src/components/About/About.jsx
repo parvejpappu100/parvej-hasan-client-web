@@ -8,7 +8,7 @@ const About = () => {
             <div className='lg:container mx-auto bg-[#070707] py-10 lg:py-20 rounded-lg'>
                 <div className='max-w-[1244px] px-4 mx-auto flex flex-col lg:flex-row items-center gap-24'>
                     <div className='max-w-[650px]'>
-                        <p className='text-[#A7A7A7] font-semibold text-xl'>About Me</p>
+                        <p className='text-[#A7A7A7] font-semibold mb-3'>About Me</p>
                         <h3 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-white '>Turning Ideas into Digital Realities: Your <span className='text-[#C9F31D]'>Web Development</span> Partner</h3>
                         <p className='text-[#A7A7A7] font-semibold mt-12'>Hello, I'm a versatile MERN stack developer with a passion for crafting extraordinary web experiences. I excel in frontend and backend development, creating captivating user interfaces and robust server-side functionality. With expertise in HTML, CSS, and JavaScript, I build visually stunning and responsive websites. Let's collaborate to bring your vision to life and make an impact in the digital realm</p>
                         <div className='flex flex-col md:flex-row  md:gap-16 mt-12'>
