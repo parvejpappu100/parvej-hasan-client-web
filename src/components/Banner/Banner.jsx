@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import { FaAngleRight, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { TbBrandFiverr } from "react-icons/tb";
 import { SiUpwork } from "react-icons/si";
 import myPhoto from "../../assets/images/me.png";
 import ResumePDF from "../../assets/resume/Resume of Parvej Hasan.pdf";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Banner = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <div className='bg-[#131313] py-24'>
             <div className='lg:container mx-auto px-4 '>
-                <div className='flex flex-col-reverse lg:flex-row  justify-between lg:items-center'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='flex flex-col-reverse lg:flex-row  justify-between lg:items-center'>
                     <div className='flex gap-5 lg:gap-24 items-center'>
                         <div className='text-white text-xl lg:text-3xl flex flex-col gap-12'>
                             <div>
@@ -63,7 +70,7 @@ const Banner = () => {
                         <img className='bg-[#C9F31D] rounded-full' src={myPhoto} alt="Parvej Hasan Pappu" />
                     </div>
                 </div>
-                <div className='bg-[#070707] p-8 rounded-xl shadow-lg flex flex-col md:flex-row items-center text-center justify-between max-w-2xl mx-auto mt-24'>
+                <div  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#070707] p-8 rounded-xl shadow-lg flex flex-col md:flex-row items-center text-center justify-between max-w-2xl mx-auto mt-24'>
                     <div className='mt-5 '>
                         <h3 className='text-[#C9F31D] text-4xl font-bold'>2+</h3>
                         <p className='text-[#A5A5A5] text-[18px] mt-2 mb-8 font-semibold'>Years Of Experience</p>

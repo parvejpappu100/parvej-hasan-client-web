@@ -1,16 +1,22 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaArrowUp } from "react-icons/fa";
 import ProjectModal from '../ProjectModal/ProjectModal';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const TabItem = ({ project }) => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
 
     const { category, name, image } = project;
     const [showModal, setShowModal] = useState(false);
 
     return (
         <div>
-            <div className='relative'>
+            <div  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='relative'>
                 <div className="relative max-w-full h-[450px] overflow-hidden rounded-md">
                     <div>
                         <img
@@ -26,7 +32,7 @@ const TabItem = ({ project }) => {
                     </div>
                 </div>
             </div>
-            <div className='mt-8 text-white hover:text-[#C9F31D] duration-500 '>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='mt-8 text-white hover:text-[#C9F31D] duration-500 '>
                 <p className='text-xl text-[#C9F31D]'>{category}</p>
                 <h3 className='text-2xl mb-3 '>{name}</h3>
             </div>

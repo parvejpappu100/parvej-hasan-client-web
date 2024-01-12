@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaCloudUploadAlt, FaCode, FaCodeBranch, FaServer } from "react-icons/fa";
 import { MdBuild, MdWeb } from 'react-icons/md';
 import { AiOutlineMobile } from 'react-icons/ai';
 import { GiDatabase } from 'react-icons/gi';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <div className='max-w-[1244px] mx-auto px-4 mt-36 mb-32'>
             <div className='text-center max-w-[800px] mx-auto'>
@@ -12,10 +19,10 @@ const Services = () => {
                     <div className='w-[10px] h-[10px] rounded-full bg-[#C9F31D]'></div>
                     <p className='text-[#A7A7A7] font-semibold'> My Services</p>
                 </div>
-                <h3 className='text-white font-semibold text-2xl md:text-3xl lg:text-5xl mt-5'>My <span className='text-[#C9F31D]'>Special Service</span> For your Business Development</h3>
+                <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='text-white font-semibold text-2xl md:text-3xl lg:text-5xl mt-5'>My <span className='text-[#C9F31D]'>Special Service</span> For your Business Development</h3>
             </div>
             <div className='mt-24 grid grid-cols-1 lg:grid-cols-2 gap-5'>
-                <div className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
                     <div>
                         <FaCode className='text-6xl text-[#C9F31D]'></FaCode>
                     </div>
@@ -24,7 +31,7 @@ const Services = () => {
                         <p className='text-[#A7A7A7] mt-3'>Develop end-to-end web applications using the MERN (MongoDB, Express, React, Node.js) stack, ensuring seamless integration between the frontend and backend.</p>
                     </div>
                 </div>
-                <div className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
                     <div>
                         <MdWeb className='text-6xl text-[#C9F31D]'></MdWeb>
                     </div>
@@ -33,7 +40,7 @@ const Services = () => {
                         <p className='text-[#A7A7A7] mt-3'>Build customized web applications tailored to your specific business needs, leveraging the power of the MERN stack to deliver high-performance and scalable solutions.</p>
                     </div>
                 </div>
-                <div className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
                     <div>
                         <AiOutlineMobile className='text-6xl text-[#C9F31D]'></AiOutlineMobile>
                     </div>
@@ -42,7 +49,7 @@ const Services = () => {
                         <p className='text-[#A7A7A7] mt-3'>Create intuitive and visually appealing user interfaces that adapt smoothly across different devices, providing an exceptional user experience on desktops, tablets, and mobile devices.</p>
                     </div>
                 </div>
-                <div className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
                     <div>
                         <FaServer className='text-6xl text-[#C9F31D]'></FaServer>
                     </div>
@@ -51,7 +58,7 @@ const Services = () => {
                         <p className='text-[#A7A7A7] mt-3'>Design and develop robust APIs using Express and Node.js, allowing smooth communication between your frontend and backend components and enabling seamless data flow.</p>
                     </div>
                 </div>
-                <div className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
                     <div>
                         <GiDatabase className='text-6xl text-[#C9F31D]'></GiDatabase>
                     </div>
@@ -60,7 +67,7 @@ const Services = () => {
                         <p className='text-[#A7A7A7] mt-3'>Implement MongoDB as the database solution for your web applications, ensuring efficient data storage, retrieval, and management.</p>
                     </div>
                 </div>
-                <div className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
                     <div>
                         <FaCodeBranch className='text-6xl text-[#C9F31D]'></FaCodeBranch>
                     </div>
@@ -69,7 +76,7 @@ const Services = () => {
                         <p className='text-[#A7A7A7] mt-3'>Integrate third-party APIs to add additional functionality and enhance the capabilities of your web applications, enabling seamless integration with external services and platforms.</p>
                     </div>
                 </div>
-                <div className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
                     <div>
                         <FaCloudUploadAlt className='text-6xl text-[#C9F31D]'></FaCloudUploadAlt>
                     </div>
@@ -78,7 +85,7 @@ const Services = () => {
                         <p className='text-[#A7A7A7] mt-3'>Deploy and host your MERN stack applications on cloud platforms such as Heroku or AWS, ensuring scalability, security, and reliability.</p>
                     </div>
                 </div>
-                <div className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#1F1F1F] p-5 border border-gray-700 rounded-xl hover:border-[#C9F31D] duration-500 flex flex-col md:flex-row text-center md:text-start items-center gap-3 hover:shadow-md'>
                     <div>
                         <MdBuild className='text-6xl text-[#C9F31D]'></MdBuild>
                     </div>

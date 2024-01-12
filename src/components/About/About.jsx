@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaPhone, FaRegCheckSquare, FaRegEnvelope } from 'react-icons/fa';
 import aboutPic from "../../assets/images/about.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+
+    useEffect(() => {
+        AOS.init();
+    }, []);
+
     return (
         <div className=''>
             <div className='lg:container mx-auto bg-[#070707] py-10 lg:py-20 rounded-lg'>
-                <div className='max-w-[1244px] px-4 mx-auto flex flex-col lg:flex-row items-center gap-24'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='max-w-[1244px] px-4 mx-auto flex flex-col lg:flex-row items-center gap-24'>
                     <div className='max-w-[650px]'>
                         <p className='text-[#A7A7A7] font-semibold mb-3'>About Me</p>
                         <h3 className='text-2xl md:text-3xl lg:text-4xl font-semibold text-white '>Turning Ideas into Digital Realities: Your <span className='text-[#C9F31D]'>Web Development</span> Partner</h3>
