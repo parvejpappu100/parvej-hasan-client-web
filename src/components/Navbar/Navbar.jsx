@@ -61,7 +61,6 @@ const Navbar = () => {
                 <div className="drawer lg:container mx-auto">
                     <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
                     <div className="drawer-content flex flex-col">
-                        {/* Navbar */}
                         <div className="w-full navbar lg:justify-between ">
                             <div className="flex-none lg:hidden">
                                 <label htmlFor="my-drawer-3" aria-label="open sidebar" className="btn btn-square btn-ghost">
@@ -74,7 +73,6 @@ const Navbar = () => {
                             </div>
                             <div className="flex-none hidden lg:block">
                                 <ul className="menu menu-horizontal text-[16px]">
-                                    {/* Navbar menu content here */}
                                     {navOptions}
                                 </ul>
                             </div>
@@ -83,15 +81,13 @@ const Navbar = () => {
                                 <div className="drawer drawer-end">
                                     <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                                     <div className="drawer-content">
-                                        {/* Page content here */}
                                         <label htmlFor="my-drawer-4" className="bg-[#C9F31D] w-[44px] h-[44px] flex items-center justify-center rounded-full text-black">
                                             <FaAlignRight></FaAlignRight>
                                         </label>
                                     </div>
-                                    <div className="drawer-side">
+                                    <div className="drawer-side z-40 overflow-hidden">
                                         <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
-                                        <ul className="menu p-4 w-80 min-h-full bg-[#1F1F1F]">
-                                            {/* Sidebar content here */}
+                                        <ul className="menu p-4 w-80 min-h-full  bg-[#1F1F1F]">
                                             <li><a>Sidebar Item 1</a></li>
                                             <li><a>Sidebar Item 2</a></li>
                                         </ul>
@@ -100,10 +96,9 @@ const Navbar = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="drawer-side">
+                    <div className="drawer-side z-40">
                         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
                         <ul className="menu p-4 w-80 min-h-full bg-[#1F1F1F]">
-                            {/* Sidebar content here */}
                             {navOptions}
                         </ul>
                     </div>

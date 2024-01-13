@@ -7,6 +7,9 @@ import myPhoto from "../../assets/images/me.png";
 import ResumePDF from "../../assets/resume/Resume of Parvej Hasan.pdf";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import animation from "../../assets/scroll.json";
+import Lottie from 'lottie-react';
+import { motion } from 'framer-motion';
 
 
 const Banner = () => {
@@ -19,8 +22,8 @@ const Banner = () => {
         <div className='bg-[#131313] py-24'>
             <div className='lg:container mx-auto px-4 '>
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='flex flex-col-reverse lg:flex-row  justify-between lg:items-center'>
-                    <div className='flex gap-5 lg:gap-24 items-center'>
-                        <div className='text-white text-xl lg:text-3xl flex flex-col gap-12'>
+                    <div className='flex gap-5 lg:gap-24 mt-12 items-center lg:items-start'>
+                        <div className='text-white text-xl lg:text-3xl flex flex-col gap-12 items-center'>
                             <div>
                                 <a href=""><FaGithub></FaGithub></a>
                             </div>
@@ -28,13 +31,17 @@ const Banner = () => {
                                 <a href=""><FaLinkedinIn /></a>
                             </div>
                             <div>
-                               <a href=""> <TbBrandFiverr /></a>
+                                <a href=""> <TbBrandFiverr /></a>
                             </div>
                             <div>
                                 <a href=""><SiUpwork /></a>
                             </div>
+                            <div className='w-10 flex flex-col gap-5'>
+                                <Lottie className='' animationData={animation} loop={true}></Lottie>
+                                <p className='uppercase text-[16px] text-[#656565] font-bold transform -rotate-90'>Scroll</p>
+                            </div>
                         </div>
-                        <div className='mt-12'>
+                        <div className=''>
                             <h4 className='text-[#656565] text-2xl md:text-3xl lg:text-4xl'>Hello, i’m</h4>
                             <h3 className='text-[#C9F31D] text-3xl md:text-4xl  lg:text-5xl font-bold my-4'>Parvej Hasan Pappu</h3>
                             <h2 className='text-2xl mb-5 font-bold md:text-4xl lg:text-5xl'><TypeAnimation
@@ -66,11 +73,17 @@ const Banner = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='' >
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ duration: 0.5 }}
+                        whileHover={{ scale: 0.9 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         <img className='bg-[#C9F31D] rounded-full' src={myPhoto} alt="Parvej Hasan Pappu" />
-                    </div>
+                    </motion.div>
                 </div>
-                <div  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#070707] p-8 rounded-xl shadow-lg flex flex-col md:flex-row items-center text-center justify-between max-w-2xl mx-auto mt-24'>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#070707] p-8 rounded-xl shadow-lg flex flex-col md:flex-row items-center text-center justify-between max-w-2xl mx-auto mt-24'>
                     <div className='mt-5 '>
                         <h3 className='text-[#C9F31D] text-4xl font-bold'>2+</h3>
                         <p className='text-[#A5A5A5] text-[18px] mt-2 mb-8 font-semibold'>Years Of Experience</p>
