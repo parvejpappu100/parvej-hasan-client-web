@@ -32,7 +32,7 @@ const Testimonial = () => {
                         <div  className='text-white max-w-3xl mx-auto'>
                             <Swiper
                                 autoplay={{
-                                    delay: 3000,
+                                    delay: 4000,
                                     disableOnInteraction: false,
                                 }}
                                 loop={true}
