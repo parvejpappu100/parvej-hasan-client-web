@@ -14,7 +14,7 @@ const ProjectModal = ({ project, showModal, setShowModal }) => {
         <div>
             {showModal ? (
                 <>
-                    <div  data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+                    <div  data-aos="zoom-in-down" data-aos-duration="500" data-aos-delay="500"
                         className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none scale-90 "
                     >
                         <div className="relative w-auto mt-12  mx-auto max-w-6xl">
