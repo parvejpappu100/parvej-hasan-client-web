@@ -11,7 +11,7 @@ const About = () => {
     }, []);
 
     return (
-        <div className=''>
+        <div className='pt-36'>
             <div className='lg:container mx-auto bg-[#070707] py-10 lg:py-20 rounded-lg'>
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='max-w-[1244px] px-4 mx-auto flex flex-col lg:flex-row items-center gap-24'>
                     <div className='max-w-[650px]'>

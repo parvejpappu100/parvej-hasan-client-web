@@ -30,27 +30,29 @@ const Home = () => {
                 </div>
             ) : (
                 <div>
-                    <AnimatedCursor
-                        innerSize={10}
-                        outerSize={20}
-                        color='201,243,29'
-                        outerAlpha={0.2}
-                        innerScale={0.7}
-                        outerScale={5}
-                        clickables={[
-                            'a',
-                            'input[type="text"]',
-                            'input[type="email"]',
-                            'input[type="number"]',
-                            'input[type="submit"]',
-                            'input[type="image"]',
-                            'label[for]',
-                            'select',
-                            'textarea',
-                            'button',
-                            '.link',
-                        ]}
-                    />
+                    <div className='hidden md:block'>
+                        <AnimatedCursor
+                            innerSize={10}
+                            outerSize={20}
+                            color='201,243,29'
+                            outerAlpha={0.2}
+                            innerScale={0.7}
+                            outerScale={5}
+                            clickables={[
+                                'a',
+                                'input[type="text"]',
+                                'input[type="email"]',
+                                'input[type="number"]',
+                                'input[type="submit"]',
+                                'input[type="image"]',
+                                'label[for]',
+                                'select',
+                                'textarea',
+                                'button',
+                                '.link',
+                            ]}
+                        />
+                    </div>
                     <Navbar />
                     <Footer />
                 </div>

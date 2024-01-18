@@ -20,7 +20,7 @@ const Skills = () => {
     }, []);
 
     return (
-        <div className=''>
+        <div className='pt-36'>
             <div className='lg:container mx-auto  rounded-lg bg-[#070707]'>
                 <div className='max-w-[1244px] mx-auto px-4 py-10 lg:py-24 flex gap-12 lg:gap-16 flex-col lg:flex-row'>
                     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='max-w-[480px]'>

@@ -52,7 +52,7 @@ const Projects = () => {
     };
 
     return (
-        <div className='my-28 max-w-[1244px] mx-auto px-4'>
+        <div className='pt-36  max-w-[1244px] mx-auto px-4'>
             <div className='text-center max-w-[800px] mx-auto'>
                 <div className='flex items-center justify-center gap-4'>
                     <div className='w-[10px] h-[10px] rounded-full bg-[#C9F31D]'></div>
@@ -72,7 +72,7 @@ const Projects = () => {
                         projects?.slice(0, showAll ? projects.length : 4).map(project => <TabItem key={project._id} project={project}></TabItem>)
                     }
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className=" my-12">
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className="mt-12">
                     {!showAll && (
                         <button onClick={handleShowAllProject} className='bg-[#C9F31D] text-black px-2 lg:px-5 py-2 rounded-xl lg:text-xl font-semibold flex items-center gap-1 hover:gap-2 duration-500'>View More Projects <FaAngleRight className='mt-1' /></button>
                     )}

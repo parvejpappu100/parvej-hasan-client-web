@@ -4,6 +4,8 @@ import { FaEnvelope, FaFacebookF, FaGithub, FaInstagramSquare, FaLinkedinIn, FaP
 import Swal from 'sweetalert2';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { SiUpwork } from 'react-icons/si';
+import { TbBrandFiverr } from 'react-icons/tb';
 
 
 const Contact = () => {
@@ -44,7 +46,7 @@ const Contact = () => {
     }
 
     return (
-        <div className='max-w-[1244px] mx-auto px-4 mt-36 mb-32'>
+        <div className='max-w-[1244px] mx-auto px-4 pt-36'>
             <div className='text-center max-w-[800px] mx-auto'>
                 <div className='flex items-center justify-center gap-4'>
                     <div className='w-[10px] h-[10px] rounded-full bg-[#C9F31D]'></div>
@@ -73,18 +75,18 @@ const Contact = () => {
                         <div className='mt-5'>
                             <h3 className="text-2xl font-semibold mb-4 duration-700 text-white" >Follow Me</h3>
                             <div className='flex gap-4'>
-                                <div className='tooltip bg-[#C9F31D] w-[44px] h-[44px] flex items-center justify-center rounded-full text-black' data-tip="Facebook">
-                                    <a href="https://www.facebook.com/pappu.parvejhasan/" target='_blank'><FaFacebookF></FaFacebookF></a>
-                                </div>
-                                <div className='tooltip bg-[#C9F31D] w-[44px] h-[44px] flex items-center justify-center rounded-full text-black' data-tip="GitHub">
-                                    <a href="https://github.com/parvejpappu100" target='_blank'><FaGithub></FaGithub></a>
-                                </div>
-                                <div className='tooltip bg-[#C9F31D] w-[44px] h-[44px] flex items-center justify-center rounded-full text-black' data-tip="Linkedin">
-                                    <a href="https://www.linkedin.com/in/parvej-hasan-pappu-569730278/" target='_blank'><FaLinkedinIn></FaLinkedinIn></a>
-                                </div>
-                                <div className='tooltip bg-[#C9F31D] w-[44px] h-[44px] flex items-center justify-center rounded-full text-black' data-tip="Instagram">
-                                    <a href="https://www.instagram.com/parvej_pappu_404/" target='_blank'><FaInstagramSquare></FaInstagramSquare></a>
-                                </div>
+                                <a href="https://github.com/parvejpappu100" target='_blank' className='bg-[#C9F31D] w-[44px] h-[44px] flex items-center justify-center rounded-full text-black'>
+                                    <FaGithub></FaGithub>
+                                </a>
+                                <a href="https://www.linkedin.com/in/parvej-hasan-pappu-569730278/" target='_blank' className='bg-[#C9F31D] w-[44px] h-[44px] flex items-center justify-center rounded-full text-black'>
+                                    <FaLinkedinIn></FaLinkedinIn>
+                                </a>
+                                <a href="https://www.upwork.com/freelancers/~0138d7aea07a92ac8a" target='_blank' className='bg-[#C9F31D] w-[44px] h-[44px] flex items-center justify-center rounded-full text-black'>
+                                    <SiUpwork />
+                                </a>
+                                <a href='' className='bg-[#C9F31D] w-[44px] h-[44px] flex items-center justify-center rounded-full text-black'>
+                                    <TbBrandFiverr />
+                                </a>
                             </div>
                         </div>
                     </div>

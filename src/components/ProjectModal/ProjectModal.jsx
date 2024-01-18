@@ -24,18 +24,18 @@ const ProjectModal = ({ project, showModal, setShowModal }) => {
                                 <div className="relative flex-auto">
                                     <div className='flex flex-col lg:flex-row gap-5 my-12 px-4'>
                                         <div className=' w-full flex justify-center items-center'>
-                                            <div className="relative max-w-full h-[450px] lg:h-[600px] overflow-hidden ">
+                                            <div className="relative max-w-full h-[350px] lg:h-[400px] overflow-hidden ">
                                                 <div className="h-max w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] rounded-lg">
                                                     <img
                                                         src={image}
                                                         alt={name}
-                                                        className="w-[450px]  object-cover object-top border"
+                                                        className=" w-[400px]  object-cover object-top border"
                                                     />
                                                 </div>
                                             </div>
                                         </div>
                                         <div className='w-full text-[#A7A7A7]'>
-                                            <h5><strong className='text-[#C9F31D]'>Project Info :</strong> {details}</h5>
+                                            <h5 className='hidden md:block'><strong className='text-[#C9F31D]'>Project Info :</strong> {details}</h5>
                                             <h4 className=' my-5 font-semibold text-[#C9F31D] text-2xl'>Project Details:</h4>
                                             <h3><strong>Category :</strong> {category}</h3>
                                             <p><strong>Technology :</strong> {technology}</p>

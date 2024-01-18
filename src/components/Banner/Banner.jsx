@@ -10,6 +10,7 @@ import 'aos/dist/aos.css';
 import animation from "../../assets/scroll.json";
 import Lottie from 'lottie-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 
 const Banner = () => {
@@ -19,22 +20,22 @@ const Banner = () => {
     }, []);
 
     return (
-        <div className='bg-[#131313] py-24'>
-            <div className='lg:container mx-auto px-4 '>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='flex flex-col-reverse lg:flex-row  justify-between lg:items-center'>
+        <div className='bg-[#131313] pt-24 lg:pt-36'>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='lg:container mx-auto px-4 '>
+                <div className='flex flex-col-reverse lg:flex-row  justify-between lg:items-center'>
                     <div className='flex gap-5 lg:gap-24 mt-12 items-center lg:items-start'>
                         <div className='text-white text-xl lg:text-3xl flex flex-col gap-12 items-center'>
                             <div>
-                                <a href=""><FaGithub></FaGithub></a>
+                                <a href="https://github.com/parvejpappu100" target='_blank'><FaGithub></FaGithub></a>
                             </div>
                             <div>
-                                <a href=""><FaLinkedinIn /></a>
+                                <a href="https://www.linkedin.com/in/parvej-hasan-pappu-569730278/" target='_blank'><FaLinkedinIn /></a>
                             </div>
                             <div>
-                                <a href=""> <TbBrandFiverr /></a>
+                                <a href="https://www.upwork.com/freelancers/~0138d7aea07a92ac8a" target='_blank'> <TbBrandFiverr /></a>
                             </div>
                             <div>
-                                <a href=""><SiUpwork /></a>
+                                <a href="https://www.upwork.com/freelancers/~0138d7aea07a92ac8a" target='_blank'><SiUpwork /></a>
                             </div>
                             <div className='w-10 flex flex-col gap-5'>
                                 <Lottie className='' animationData={animation} loop={true}></Lottie>
@@ -63,7 +64,9 @@ const Banner = () => {
                             /></h2>
                             <p className='text-[#A5A5A5] max-w-[500px]'>I'm a passionate MERN (MongoDB, Express.js, React.js, Node.js) stack developer, dedicated to crafting innovative web applications. With expertise in both front-end and back-end technologies!</p>
                             <div className='mt-5 flex items-center gap-4 lg:gap-8'>
-                                <button className='bg-[#C9F31D] text-black px-2 lg:px-5 py-2 rounded-xl lg:text-xl font-semibold flex items-center gap-1 hover:gap-2 duration-500'>Hire Me <FaAngleRight className='mt-1' /></button>
+                                <Link to='contact'>
+                                    <button className='bg-[#C9F31D] text-black px-2 lg:px-5 py-2 rounded-xl lg:text-xl font-semibold flex items-center gap-1 hover:gap-2 duration-500'>Hire Me <FaAngleRight className='mt-1' /></button>
+                                </Link>
                                 <a href={ResumePDF}
                                     download="Resume of Parvej Hasan Pappu"
                                     target="_blank"
@@ -83,7 +86,7 @@ const Banner = () => {
                         <img className='bg-[#C9F31D] rounded-full' src={myPhoto} alt="Parvej Hasan Pappu" />
                     </motion.div>
                 </div>
-                <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" className='bg-[#070707] p-8 rounded-xl shadow-lg flex flex-col md:flex-row items-center text-center justify-between max-w-2xl mx-auto mt-24'>
+                <div className='bg-[#070707] p-8 rounded-xl shadow-lg flex flex-col md:flex-row items-center text-center justify-between max-w-2xl mx-auto mt-20 lg:mt-0'>
                     <div className='mt-5 '>
                         <h3 className='text-[#C9F31D] text-4xl font-bold'>2+</h3>
                         <p className='text-[#A5A5A5] text-[18px] mt-2 mb-8 font-semibold'>Years Of Experience</p>

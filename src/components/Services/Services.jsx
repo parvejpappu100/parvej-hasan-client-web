@@ -13,7 +13,7 @@ const Services = () => {
     }, []);
 
     return (
-        <div className='max-w-[1244px] mx-auto px-4 mt-36 mb-32'>
+        <div className='max-w-[1244px] mx-auto px-4 pt-36'>
             <div className='text-center max-w-[800px] mx-auto'>
                 <div className='flex items-center justify-center gap-4'>
                     <div className='w-[10px] h-[10px] rounded-full bg-[#C9F31D]'></div>

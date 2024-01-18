@@ -25,19 +25,34 @@ const Footer = () => {
                         <p className='text-2xl font-semibold  text-[#C9F31D] uppercase'>Quick Link</p>
                         <ul className='flex gap-5  mt-8'>
                             <li>
-                                <Link to='home' className='text-[#A7A7A7] font-semibold'>Home</Link>
+                                <Link spy={true}
+                                    smooth={true}
+                                    duration={500} 
+                                    to='home' className='text-[#A7A7A7] font-semibold'>Home</Link>
                             </li>
                             <li>
-                                <Link to='services' className='text-[#A7A7A7] font-semibold'>Service</Link>
+                                <Link spy={true}
+                                    smooth={true}
+                                    duration={500} 
+                                    to='services' className='text-[#A7A7A7] font-semibold'>Service</Link>
                             </li>
                             <li>
-                                <Link to='about' className='text-[#A7A7A7] font-semibold'>About</Link>
+                                <Link spy={true}
+                                    smooth={true}
+                                    duration={500} 
+                                    to='about' className='text-[#A7A7A7] font-semibold'>About</Link>
                             </li>
                             <li>
-                                <Link to='skill' className='text-[#A7A7A7] font-semibold'>Skill</Link>
+                                <Link spy={true}
+                                    smooth={true}
+                                    duration={500} 
+                                    to='skill' className='text-[#A7A7A7] font-semibold'>Skill</Link>
                             </li>
                             <li>
-                                <Link to='contact' className='text-[#A7A7A7] font-semibold'>Contact</Link>
+                                <Link spy={true}
+                                    smooth={true}
+                                    duration={500} 
+                                    to='contact' className='text-[#A7A7A7] font-semibold'>Contact</Link>
                             </li>
                         </ul>
                     </div>
@@ -60,12 +75,12 @@ const Footer = () => {
                 </div>
             </div>
             <div className='py-8 max-w-[1244px] mx-auto px-4  flex flex-col gap-8 md:flex-row md:gap-0 items-center justify-between'>
-                <div className="  font-semibold text-[#A7A7A7]">Copyright @2023, <span className='text-[#C9F31D]'>PAPPU.</span> All Rights Reserved</div>
+                <div className="  font-semibold text-[#A7A7A7]">Copyright @2024, <span className='text-[#C9F31D]'>PAPPU.</span> All Rights Reserved</div>
                 <div className=' flex gap-4 items-center'>
-                    <a href="" className='text-[#A7A7A7] hover:text-white font-semibold duration-500'>Facebook</a>
-                    <a href="" className='text-[#A7A7A7] hover:text-white font-semibold duration-500'>Upwork</a>
+                    <a href="https://www.facebook.com/profile.php?id=61552620726953" className='text-[#A7A7A7] hover:text-white font-semibold duration-500'>Facebook</a>
+                    <a href="https://www.instagram.com/parvej_pappu_404/" className='text-[#A7A7A7] hover:text-white font-semibold duration-500'>Instagram</a>
                     <a href="" className='text-[#A7A7A7] hover:text-white font-semibold duration-500'>Fiverr</a>
-                    <a href="" className='text-[#A7A7A7] hover:text-white font-semibold duration-500'>Linkedin</a>
+                    <a href="https://www.linkedin.com/in/parvej-hasan-pappu-569730278/" className='text-[#A7A7A7] hover:text-white font-semibold duration-500'>Linkedin</a>
                 </div>
             </div>
             <div className='flex justify-center'>
