@@ -11,6 +11,17 @@
       "image": "https://i.ibb.co/7kN1xMV/GoalGuru.png"
     },
     {
+      "_id": "9",
+      "category": "MERN",
+      "name": "Creative Olympiad Bangladesh",
+      "details": "This is an Olympiad Club website. All the information about the Olympiad is given here. Here all students can register to participate in Olympiad. A payment system has been implemented here in. Payment can be made here through Bkash Payment Gateway System. This website is fully dynamic. It is controlled by admin. Admin will delete, update or post something if he wants.",
+      "technology": "MongoD, React , Node , Express Js, Firebase, Tailwind CSS, DaisyUI",
+      "client_link": "Not permitted by Client",
+      "server_link": "Not permitted by Client",
+      "live_link": "https://creativeolympiadbd.com/",
+      "image": "https://i.ibb.co/v38BpLR/cobd.png"
+    },
+    {
       "_id": "2",
       "category": "MERN",
       "name": "ToyVroom",
