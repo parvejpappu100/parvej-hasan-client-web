@@ -11,6 +11,17 @@
       "image": "https://i.ibb.co/7kN1xMV/GoalGuru.png"
     },
     {
+      "_id": "11",
+      "category": "MERN",
+      "name": "Tech Trove E-commerce",
+      "details": "This is a e-commerce website which name is Tech Trove. Here people can buy electronics, hardware. This is a dynamic website. There are two interface of this website once is for normal user and another one for admin. An admin can add new products for the admin panel. He also can update, delete of any product. Not only product he can change slider form admin panel. There are two payment system and they are Stripe and paypal. Google login , facebook login , github login, sign in with email password implemented using firebase.",
+      "technology": "HTML, CSS, Tailwind, ReactJS, MongoDB, Firebase authentication. ExpressJS,Stripe, npm package.",
+      "client_link": "https://github.com/parvejpappu100/tech-trove",
+      "server_link": "https://github.com/parvejpappu100/tech-trove-server",
+      "live_link": "https://tech-trove.web.app/",
+      "image": "https://i.ibb.co.com/1sfBXt7/screencapture-tech-trove-web-app-2024-12-24-00-27-49.png"
+    },
+    {
       "_id": "9",
       "category": "MERN",
       "name": "Creative Olympiad Bangladesh",
@@ -77,6 +88,29 @@
       "image": "https://i.ibb.co/S61GCr5/G3.png"
     },
     {
+      "_id": "9",
+      "category": "REACT",
+      "name": "BikeZone",
+      "details": "The BikeZone website will showcase a wide range of bikes and parts, complete with detailed descriptions and specifications. It will feature a modern single-page application (SPA) approach using React.js for seamless navigation. The website will have a header section with a navigation bar, main content displaying bike products and their details, and a footer section with links and contact information. Authentication and payment features will be integrated for a secure user experience.",
+      "technology": "HTML, CSS , Tailwind , React , React Router",
+      "client_link": "https://github.com/parvejpappu100/bike-dekho-client",
+      "server_link": "",
+      "live_link": "https://bikezone55.netlify.app/",
+      "image": "https://i.ibb.co.com/6wKrXHP/screencapture-bikezone55-netlify-app-2024-12-24-00-08-09.png"
+    },
+    {
+      "_id": "10",
+      "category": "REACT",
+      "name": "Penguin Fashion",
+      "details": "This is E-commerce website named Penguin Fashion. Here people can buy their winter collection. Here have both collection for men and woman.",
+      "technology": "HTML, CSS , Tailwind , React , React Router",
+      "client_link": "https://github.com/parvejpappu100/penguin-fashion00",
+      "server_link": "",
+      "live_link": "https://penguin-fashion00.netlify.app/",
+      "image": "https://i.ibb.co.com/YWndpHb/screencapture-penguin-fashion00-netlify-app-2024-12-24-00-18-54.png"
+    },
+
+    {
       "_id": "7",
       "category": "REACT",
       "name": "Knowledge Cafe",
@@ -98,4 +132,5 @@
       "live_link": "https://musical-chimera-06c1cf.netlify.app/",
       "image": "https://i.ibb.co/R97DVZm/Screencapture-musical-chimera-06c1cf-netlify-app-2023-07-10-12-46-27.png"
     }
+    
   ]

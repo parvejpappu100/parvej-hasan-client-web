@@ -53,9 +53,9 @@ const ProjectModal = ({ project, showModal, setShowModal }) => {
                                             <h4 className=' my-5 font-semibold text-[#C9F31D] text-2xl'>Project Details:</h4>
                                             <h3><strong>Category :</strong> {category}</h3>
                                             <p><strong>Technology :</strong> {technology}</p>
-                                            <p><strong>Client Link :</strong> <a className='underline' href={client_link}>{client_link}</a></p>
-                                            <p><strong>Server Link :</strong> <a className='underline' href={server_link ? server_link : "#"}>{server_link ? server_link : "No Server"}</a></p>
-                                            <p><strong>Live Link :</strong> <a className='text-[#C9F31D] font-semibold' href={live_link}>{live_link}</a></p>
+                                            <p><strong>Client Link :</strong> <a className='underline' target='_blank' href={client_link}>{client_link}</a></p>
+                                            <p><strong>Server Link :</strong> <a className='underline' target='_blank' href={server_link ? server_link : "#"}>{server_link ? server_link : "No Server"}</a></p>
+                                            <p><strong>Live Link :</strong> <a className='text-[#C9F31D] font-semibold' target='_blank' href={live_link}>{live_link}</a></p>
                                         </div>
                                     </div>
                                 </div>
