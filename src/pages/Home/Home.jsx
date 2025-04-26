@@ -14,7 +14,7 @@ const Home = () => {
         const fetchData = async () => {
             setTimeout(() => {
                 setLoading(false);
-            }, 3500);
+            }, 2900);
         };
 
         fetchData();
